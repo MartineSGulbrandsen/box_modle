@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model 📦</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        main{
+            font-family: 'Ubuntu', sans-serif;
+            /* slik legger man til kommentar i css */
+            display: flex;
+            /* flex brukes til å plassere innhold */
+
+            flex-wrap: wrap;
+            /* flex-wrap brukes til å pakke innholdet
+            der hvor det er plass dyttes ting opp
+            og der det ikke er plass dyttes ting ned*/
+            /*brukes fr å sentrere innhold*/
+
+            justify-content: center;
+            align-items: center;
+
+            margin: 40px;
+            padding:20px;
+
+            background-color: darkcyan;
+            min-height: 1000px;
+        }
+
+        div{
+            max-width:300px;
+
+            margin: 40px;
+            padding:20px;
+
+            border: lightseagreen solid 10px;
+
+            background-color: rgb(100, 212, 170);
+        }
+        .artur{
+            background-color: lightskyblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="artur">
+            <h2>Boksmodellen</h2>
+            <p>Boksmodellen består av innholdet,
+                padding, border og margin.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Margin</h2>
+
+            <p>Margin er luft rundt innholdet.
+                denne luften er usynlig
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Value</h2>
+
+            <p>Value er en del av CSS reglene til CSS.
+                Den tillater bruk av tall, lengder
+                prosent, URLs "Counters", og
+                farger.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Padding</h2>
+
+            <p>
+                Padding brukes til å lage plass rundt innholdet
+                til et element, innenfor eventuelle definerte grenser.
+                Det er egenskaper for innstilling av padding for hver
+                side av et element. (topp, høyre, bunn og venstre).
+  
+        </div>
+
+        <div class="artur">
+            <h2>Bordrer</h2>
+
+            <p>Border lar deg spesifisere stilen,
+                bredden og fargen på et elements kant.
+                
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hva er en selector i CSS?</h2>
+
+            <p>Selector er den delen av CSS-syntaksen som definerer
+                hva som skal tilsettes. det kan være visse typer element,
+                elementer med vissse inndelinger.
+                Selector starter med # i CSS.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hva er en attribute i CSS?</h2>
+
+            <p>Attributt er den delen som velger elementer 
+                med en bestemt egenskap og verdi. Attributt starter fte med (a)
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>P - Paragraph</h2>
+
+             <p> P-tag representerer et avsnitt(Paragraph).
+                Avsnitt blir vanligvis representert i visuelle medier som tekstblokker
+                skilt fra tilstøtende blokker med blanke linjer og / eller førstelinjeinnrykk.
+                HTML-avsnitt kan være hvilken som helst strukturell gruppering av relatert innhold
+                for eksempel bilder eller skjemafelt.
+            </p>
+            <p>For å lage avsnitt, må man ha seperate P-tags. Dette gjør man ved å bruke P-taggen
+                i samme DIV.
+            </p>
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>H1-Header tags</h2>
+
+            <p>Overskriftsmerker har sing egen plass på en side
+                og må brukes i riktig rekkefølge fra og med h1.
+                h1 til h6-kodene brukes til å definere HTML-overskrifter.
+                h1 definerer den viktigste overskriften, mens h6 definerer den
+                minst viktige overskriften.
+            </p>
+            <p>H1-taggen er den viktigste overskriften fordi det er taggen på høyeste nivå
+                som viser hva den spesifikke siden din handler om.
+                Søkemotorer gir vanligvis denne koden mer vekt enn andre overskrifter,
+                så det forbedrer vanligvis søkemotor-rangeringen din når du bruker den riktig.
+ 
+            </p>
+           
+        </div>
+
+        <div class="artur">
+            <h2>Kommentering i HTML</h2>
+
+            <p>Tekstbaserte programmeringsspråk er det viktig å kommentere og dokumentere hva koden skal gjøre. 
+                Også i HTML kan du dokumentere og kommentere. Det gjør du ved å bruke <! kommentar > - som vist i bildet under. 
+                Da vil det som står i vinkelparentesen ikke synes på nettsiden. 
+                Legg merke til at du må ha et utropstegn i begynnelsen av vinkelparentes for at det skal virke. 
+                Du skal kun ha utropstegnet i begynnelsen og ikke i slutten av parentesen, 
+                og kommentarer trenger ikke avsluttes som </!> - slik du er nødt til når du bruker andre tags
+                (som f.eks. du ser med <body> og </body> i eksempelet under.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Kommentere i CSS</h2>
+
+            <p>I programmering har vi vist hvordan vi kan kommentere i koden for å gjøre det enklere å lese og feilsøke den. 
+                Også i CSS kan man kommentere. Det gjøres ved å starte med /* og avslutte med */. 
+                Legg merke til at det ikke er alle steder du kan kommentere. Det må ligge i området hvor du definerer CSS - mellom style-elementene.
+            </p>
+        </div>
+
+
+
+
+        <div class="artur">
+            <h2>Hvordan legge inn lenker?</h2>
+
+            <p>For å lage en lenke på en nettside bruker vi <a> 
+                og legger på en attributt som heter href for å angi hvor lenka skal peke til. 
+                Som et eksempel kan vi bruke dette avsnittetA:link = Sette inn link.
+                <a href= “http://.... ” ></a>
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hvordan legge inn bilder?</h2>
+
+            <p>Img= Sette inn bilde. Bildet du skal legge inn må ligge
+                i samme mappe som html-dokumentet ditt. 
+                ./ = skriv inn filnavnet på bildet.
+                
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hvordan legge inn bakgrunnsfarge? </h2>
+
+            <p>Bakgrunen bør være nøytral slik at den ikke dominerer siden din. 
+                En bakgrunn kan være et bilde eller en farge
+                Bakgrunnen skrives inn i <BODY> til dokumentet:
+                
+                BODY background-color = "red"
+                gjør at dokument bakgrunnen blir rød.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hva brukes "main" i HTML til?</h2>
+
+            <p>Main er hvordan man har inholdet av dkumentet.
+                Kan ikke være mer en en main. 
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Skrive farger med HEX verdi</h2>
+
+            <p>Velg hvilken farge man vil
+                f.eks background-color:# og 3 til 6 tall
+                med verdien 0-9, eller bokstaven a til f.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Skrive farge med RGB verdi</h2>
+
+            <p>Skriv rgb(92, 170, 150) altså 
+                verdien til fargen i parantes.
+            </p>
+        </div>
+
+        <div class="artur">
+            <h2>Hva brukes flexbox i CSS til?</h2>
+
+            <p>Flexbox gjør det lettere å designe
+                layout på nettsien. Mer effektiv
+                måte å plassere "Align" osv.
+                Funker bra selv om størrelsen er ukjent
+                og/eller dynamisk.
+            </p>
+        </div>
+
+    </main>
+    
+</body>
+</html>
